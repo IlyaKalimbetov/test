@@ -1023,8 +1023,8 @@ footer > .container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        position: relative;
-        right: 4vw;
+        position: absolute;
+        right: 35px;
         align-self: center;
     }
 
