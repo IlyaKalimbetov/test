@@ -1260,8 +1260,6 @@ footer > .container {
     count_romi START
     -------------------*/
 
-    
-
     .count_romi_wrapper {
         display: flex;
         flex-direction: column;
@@ -1556,6 +1554,10 @@ footer > .container {
         padding: 10px 0 10px;
     }
 
+    .header_menu {
+        top:76px;
+    }
+
     .big_letters > p {
         font-size: 7vw;
         line-height: 7vw;
@@ -1571,8 +1573,6 @@ footer > .container {
         padding: 10px 60px;
         font-size: 4.5vw;
     }
-
-    
 
     /*-------------------
     Header END
