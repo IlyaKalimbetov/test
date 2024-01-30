@@ -1548,21 +1548,31 @@ footer > .container {
     Header START
     -------------------*/
 
+    .sticky_info_block_wrapper {
+        top: 75px;
+    }
+
+    header {
+        padding: 10px 0 10px;
+    }
+
     .big_letters > p {
-        font-size: 8vw;
-        line-height: 8vw;
+        font-size: 7vw;
+        line-height: 7vw;
     }
 
     .little_words > p {
-        margin: 0 35px;
+        margin: 0;
         font-size: 4vw;
-        line-height: 5vw;
+        line-height: 4.5vw;
     }
 
     .info_block_btn > .gradient_btn {
         padding: 10px 60px;
         font-size: 4.5vw;
     }
+
+    
 
     /*-------------------
     Header END
@@ -1700,6 +1710,10 @@ footer > .container {
     .introducing_sagmel_title {
         font-size: 25px;
         line-height: 25px;
+    }
+
+    .how_it_works_title {
+        font-size: 30px;
     }
 
     /*-------------------
