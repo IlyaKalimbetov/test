@@ -1,39 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
 
     <!-- Адаптирование страницы для мобильных устройств -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Запрет распознования номера телефона -->
-    <meta name="format-detection" content="telephone=no">
-    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
     <!-- Заголовок страницы -->
-    <title>ECOMMHUB</title>
-
-    <!-- Данное значение часто используют(использовали) поисковые системы -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
-    <!-- Изменение цвета панели моб. браузера -->
-    <meta name="msapplication-TileColor" content="#DE041D">
-    <meta name="theme-color" content="#DE041D">
+    <title>SEGMEL</title>
 
     <!-- Подключение шрифтов с гугла -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Rubik:wght@500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <!-- Подключение файлов стилей -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body>
     <div class="wrap">
@@ -41,330 +27,434 @@
             <header class="header_fixed">
                 <div class="container">
                     <div class="header_wrap">
-                        <div class="logo">
-                            <a href="#"><img src="image/logo.svg" alt="logo"></a>
+                        <a class="logo_small_screen" id="header_logo" href="#">SEGMEL</a>
+                        <div class="header_menu_block">
+                            <ul class="header_menu">
+                                <li>
+                                    <a id="header_logo" href="#">SEGMEL</a>
+                                </li>
+                                <li>
+                                    <a href="#">Продукт</a>
+                                </li>
+                                <li>
+                                    <a href="#">Кейсы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Как это работает</a>
+                                </li>
+                                <li>
+                                    <a href="#">Тарифы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Блог</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="menu">
-                            <li>
-                                <a class="scroll" href="#about">О продукте</a>
-                            </li>
-                            <li>
-                                <a class="scroll" href="#advantages">Возможности</a>
-                            </li>
-                            <li>
-                                <a class="scroll" href="#cases">Кейсы</a>
-                            </li>
-                            <li>
-                                <a class="scroll" href="#steps">Как это работает</a>
-                            </li>
-                            <li>
-                                <a href="#" class="link">
-                                    <span>Попробовать бесплатно</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <button class="menu_btn">
-                            <span></span>
-                        </button>
+                        <div class="header_btn_div">
+                            <button class="header_btn" type="submit">Войти</button>
+                            <input class="btn_click" type="checkbox">
+                            <div class="hamburger-lines">
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
-
-
-            <section class="intro">
+            <section class="sticky_info_block_wrapper">
                 <div class="container">
-                    <div class="intro_wrap">
-                        <div class="intro_title">Платформа ML сегментации для повышения прибыли <br>и конверсии</div>
-                        <div class="intro_text">Создание релевантного цифрового опыта в каждой точке контакта</div>
-                        <a href="#" class="link">
-                            <span>Попробовать бесплатно</span>
-                        </a>
+                    <div class="info_title_block">
+                        <div class="big_letters">
+                            <p>Повышайте качество рекламных кампаний и снижайте CAC</p>
+                        </div>
+                        <div class="little_words">
+                            <p>Благодаря основанному на искусственном интеллекте подсчету посетителей сайта
+                                и входящих
+                                лидов,
+                                который поможет вам масштабировать и оптимизировать вашу воронку.</p>
+                        </div>
+                        <div class="info_block_btn">
+                            <button class="gradient_btn">Заказать демонстарцию</button>
+                        </div>
                     </div>
-                    <div class="intro_image">
-                        <img src="image/illustration.svg" alt="">
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="about" id="about">
-                <div class="container">
-                    <div class="about_title title">Почему вам нужен EcommHub?</div>
-                    <div class="about_items">
-                        <div class="about_item">
-                            <div class="about_item-icon">
-                                <img src="image/about1.svg" alt="">
-                            </div>
-                            <div class="about_item-text">
-                                Чтобы <span>повышать конверсию</span> и вовлеченность, а также LTV, ARPU, NPS и ROI
-                            </div>
-                        </div>
-                        <div class="about_item">
-                            <div class="about_item-icon">
-                                <img src="image/about2.svg" alt="">
-                            </div>
-                            <div class="about_item-text">
-                                Чтобы <span>не платить</span><br> за привлечение клиентов, которые ничего не покупают
-                            </div>
-                        </div>
-                        <div class="about_item">
-                            <div class="about_item-icon">
-                                <img src="image/about3.svg" alt="">
-                            </div>
-                            <div class="about_item-text">
-                                Чтобы понимать, почему отваливаются ваши клиенты, и <span>снижать отток</span>
-                            </div>
-                        </div>
+                    <div class="info_image_block">
+                        <img src="/image/start-image.svg" alt="">
                     </div>
                 </div>
             </section>
-
-
-            <section class="advantages" id="advantages">
+            <section class="benefit_for_the_customer_block">
                 <div class="container">
-                    <div class="advantages_title title">Возможности</div>
-                    <div class="advantages_items">
-                        <div class="advantages_item">
-                            <div class="advantages_item-image">
-                                <img src="image/advantages1.svg" alt="">
+                    <div class="benefit_title">
+                        <p id="benefit_p1">Приносим клиентам</p>
+                        <p id="benefit_p2">+27% К ВЫРУЧКЕ</p>
+                        <p id="benefit_p3">За счёт оптимизации рекламных кампаний</p>
+                        <div class="social_media">
+                            <div class="yandex_block">
+                                <a href="#">
+                                    <img src="image/yandex_logo.svg" alt="">
+                                </a>
                             </div>
-                            <div class="advantages_item-description">
-                                <div class="advantages_item-title">
-                                    Персонализация<br> и таргетинг
-                                </div>
-                                <div class="advantages_item-text">
-                                    Персонализируйте каждое взаимодействие для обеспечения оптимального клиентского
-                                    опыта по всем каналам, включая сайты, мобильные приложения, электронную почту и
-                                    рекламные объявления
-                                </div>
+                            <div class="tg_block">
+                                <a href="#">
+                                    <img src="image/tg_logo.svg" alt="">
+                                </a>
                             </div>
-                        </div>
-                        <div class="advantages_item">
-                            <div class="advantages_item-image">
-                                <img src="image/advantages2.svg" alt="">
+                            <div class="vk_block">
+                                <a href="">
+                                    <img src="image/vk_logo.svg" alt="">
+                                </a>
                             </div>
-                            <div class="advantages_item-description">
-                                <div class="advantages_item-title">
-                                    Оптимизация рекламных кампаний
-                                </div>
-                                <div class="advantages_item-text">
-                                    Используйте ML-сегментацию для оптимизации рекламных кампаний<br> в ремаркетинге,
-                                    которая позволит вам расширить верхнюю часть воронки<br> и сократить расходы на
-                                    этапе ремаркетинга
-                                </div>
+                            <div class="promo_block">
+                                <a href="#">
+                                    <img src="image/promo_logo.svg" alt="">
+                                </a>
                             </div>
                         </div>
-                        <div class="advantages_item">
-                            <div class="advantages_item-image">
-                                <img src="image/advantages3.svg" alt="">
+                    </div>
+                    <div class="illustration_benefits">
+                        <div class="illustration_benefits_wrapper_media">
+                            <img src="image/grap_benefits.svg" alt="">
+                            <div class="illustration_benefits_text">
+                                <p id="illustration_benefits_p1">Повысим конверсию ретаргетинговых кампаний</p>
+                                <p id="illustration_benefits_p2">Рост продаж на +27% или сокращение неэффективных
+                                    расходов
+                                    на рекламу +47%. Segmel позволит
+                                    вам достигать роста продаж при одновременной экономии на рекламных расходах.</p>
                             </div>
-                            <div class="advantages_item-description">
-                                <div class="advantages_item-title">
-                                    Тестирование и оптимизация
-                                </div>
-                                <div class="advantages_item-text">
-                                    Сочетайте A/B-тестирование и персонализацию<br> с оптимизацией на основе машинного
-                                    обучения. Экспериментируйте по всему комплексу используемых вами технологий, с
-                                    большей уверенностью и меньшим риском
-                                </div>
+                        </div>
+                        <div class="illustration_benefits_wrapper_media tablet_media">
+                            <img id="q" src="image/benefit_logo_2.svg" alt="">
+                            <div class="illustration_benefits_text1">
+                                <p id="illustration_benefits_p1">Сквозная аналитика и отчетность без лишних хлопот</p>
+                                <p id="illustration_benefits_p2">РСтройте быстрые, гибкие и удобные отчеты.
+                                    Оптимизируйте
+                                    CPL, CPO и тестируйте гипотезы роста с первых дней работы с сервисом.</p>
+                            </div>
+                        </div>
+                        <div class="illustration_benefits_wrapper_media tablet_media">
+                            <img id="q" src="image/benefit_logo_3.svg" alt="">
+                            <div class="illustration_benefits_text1">
+                                <p id="illustration_benefits_p1">Подключение всего в пару кликов</p>
+                                <p id="illustration_benefits_p2">Интегрируем Segmel с вашими рекламными кабинетами, CRM
+                                    и любыми другими сервисами для экономии ресурсов и роста продаж.</p>
+                            </div>
+                        </div>
+                        <div class="illustration_benefits_wrapper_media tablet_media">
+                            <img id="q" src="image/benefit_logo_4.svg" alt="">
+                            <div class="illustration_benefits_text1">
+                                <p id="illustration_benefits_p1">Поддержка команды 24/7</p>
+                                <p id="illustration_benefits_p2">Не оставим один на один с платформой — помогаем
+                                    от определения метрик успеха на этапе заявки до обучения маркетологов, которые
+                                    работают
+                                    руками.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-
-            <section class="cases" id="cases">
+            <section class="how_it_works">
                 <div class="container">
-                    <div class="cases_title title">Кейсы</div>
-                    <div class="cases_text">Несколько реализованных кейсов для интернет-магазина обуви <a
-                            href="https://marioberluchi.ru/" target="_blank">Mario Berlucci</a>. Основная задача
-                        состояла в том, чтобы Предсказание пересчитывается раз в 10 секунд для каждого клиента.</div>
-                </div>
-            </section>
-
-
-            <section class="cart">
-                <div class="container">
-                    <div class="cart_title title">Брошенная корзина</div>
-                    <div class="cart_box">
-                        <div class="cart_box-title">Результаты</div>
-                        <div class="cart_items">
-                            <div class="cart_item">
-                                <div class="cart_item-procent">+16,5%</div>
-                                <div class="cart_item-title">Увеличение<br> конверсии в заказ</div>
+                    <div class="how_it_works_title">
+                        <p>Как это работает</p>
+                    </div>
+                    <div class="margin_block_wrapper">
+                        <div class="how_it_works_information_grid_wrapper">
+                            <div class="how_it_works_information_block">
+                                <img src="image/behavioral_data.svg" alt="">
+                                <p class="how_it_works_information_title">Поведенческие данные</p>
+                                <p class="how_it_works_information_description">В 10 раз больше, чем в Google Analytics
+                                    и
+                                    Яндекс.Метрика</p>
                             </div>
-                            <div class="cart_item">
-                                <div class="cart_item-procent">+35,7%</div>
-                                <div class="cart_item-title">Увеличение<br> ARPU</div>
-                            </div>
-                            <div class="cart_item">
-                                <div class="cart_item-procent">-17,2%</div>
-                                <div class="cart_item-title">Доля брошенных корзин</div>
+                            <div class="how_it_works_information_block">
+                                <img src="image/data_CRM.svg" alt="">
+                                <p class="how_it_works_information_title">Данные CRM</p>
+                                <p class="how_it_works_information_description">Этапы воронки, выручка</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="cart_mechanics">
-                        <div class="cart_mechanics-title">Как работает механика?</div>
-                        <div class="cart_mechanics-text">Когда клиент заходит на сайт, мы записываем его действия и
-                            прогоняем через алгоритм предсказания: “купит в текущей сессии или не купит” и “вернется в
-                            течение 7 дней или не вернется”. Предсказание пересчитывается раз в 10 секунд для каждого
-                            клиента.</div>
-                        <div class="cart_mechanics-text">Если в корзине клиента есть товары и нет скидочного купона, а
-                            по предсказанию он не вернется<br> в течение 7 дней и вероятность покупки меньше 30%, то
-                            клиент увидит в корзине попап.</div>
-                        <div class="cart_mechanics-discount">
-                            <div class="cart_mechanics-discount-text">В рамках данного посещения вам доступна скидка 10%
-                            </div>
-                            <a href="#" class="link">
-                                <span>Применить скидку</span>
-                            </a>
+                        <div class="connected_arrows">
+                            <img id="other_media" src="image/two_arrows.svg" alt="">
+                            <img id="phone_media" src="image/one_arrow.svg" alt="">
                         </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="optimization">
-                <div class="container">
-                    <div class="optimization_title title">Оптимизация рекламных кампаний</div>
-                    <div class="optimization_box">
-                        <div class="optimization_box-title">Результаты</div>
-                        <div class="optimization_items">
-                            <div class="optimization_item">
-                                <div class="optimization_item-procent">+18,3%</div>
-                                <div class="optimization_item-title">Конверсия в заказ ремаркетинговых кампаний</div>
+                        <div class="center_how_it_works_information_block">
+                            <p class="center_how_it_works_information_title">Предиктивная аналитика</p>
+                            <p class="center_how_it_works_information_description">Segmel в режиме реального времени
+                                рассчитывает
+                            </p>
+                            <div class="clock_with_text">
+                                <img src="image/complete_logo.svg" alt="">
+                                <p>Вероятность покупки</p>
                             </div>
-                            <div class="optimization_item">
-                                <div class="optimization_item-procent">>2000%</div>
-                                <div class="optimization_item-title">ROI по выкупленным заказам</div>
+                            <div class="clock_with_text">
+                                <img src="image/complete_logo.svg" alt="">
+                                <p>Ожидаемый LTV для каждого посетителя сайта</p>
                             </div>
-                            <div class="optimization_item">
-                                <div class="optimization_item-procent">-17,2%</div>
-                                <div class="optimization_item-title">Добавить что-то еще</div>
+                            <div class="clock_with_text">
+                                <img src="image/complete_logo.svg" alt="">
+                                <p>Вероятность возврата в продукт</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="optimization_mechanics">
-                        <div class="optimization_mechanics-title">Как работает механика?</div>
-                        <div class="optimization_mechanics-wrap">
-                            <div class="optimization_mechanics-image">
-                                <img src="image/mechan.svg" alt="">
+                        <div class="connected_arrows_last">
+                            <img id="other_media" src="image/three_arrows.svg" alt="">
+                            <img id="phone_media" src="image/one_arrow.svg" alt="">
+                        </div>
+                        <div class="gradient_blocks_info">
+                            <div class="gradient_block">
+                                <p>Использование предсказание конверсии в Яндекс.Директ</p>
                             </div>
-                            <div class="optimization_mechanics-desc">
-                                <div class="optimization_mechanics-text">Нестандартный подход к решению рекламной
-                                    кампании ремаркетинга с помощью аглоритма ML.</div>
-                                <ul class="optimization_mechanics-list">
-                                    <li>Данные о вероятности совершения конверсии пользователем обновляются каждый день
-                                        и сразу поступают в рекламные системы</li>
-                                    <li>Скор пользователя обновляется как при совершении действий, так и при его
-                                        бездействии</li>
-                                    <li>Пользователь получает оценку сразу после первой сессии на сайте, каждая сессия
-                                        изменяет оценку</li>
-                                    <li>Применение к разным рекламным системам: Google Ads, Facebook, Instagram, Yandex
-                                        Direct, MyTarget</li>
-                                </ul>
+                            <div class="gradient_block">
+                                <p>Использование предсказание конверсии в CRM-маркетинге</p>
+                            </div>
+                            <div class="gradient_block">
+                                <p>Предиктивная модель атрибуции в BI-системе</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-
-            <section class="steps" id="steps">
+            <section class="count_romi">
                 <div class="container">
-                    <div class="steps_title title">Как это работает?</div>
-                    <div class="steps_items">
-                        <div class="steps_item">
-                            <div class="steps_item-number">1</div>
-                            <div class="steps_item-title">Собираем сырые данные</div>
-                            <div class="steps_item-text">Размечаем исходные данные и используем для сбора данных в базе
-                                Google BigQuery</div>
+                    <div class="count_romi_wrapper">
+                        <div class="count_romi_logo_block">
+                            <img src="image/ROMI_logo.svg" alt="">
                         </div>
-                        <div class="steps_item">
-                            <div class="steps_item-number">2</div>
-                            <div class="steps_item-title">Собираем признаки из визитов контента</div>
-                            <div class="steps_item-text">Количество просмотренных товаров, количество добавлений в
-                                избранное, количество добавленных за сессию товаров в корзину </div>
-                        </div>
-                        <div class="steps_item">
-                            <div class="steps_item-number">3</div>
-                            <div class="steps_item-title">Формируем обучающую выборку</div>
-                            <div class="steps_item-text">Подготовка обучающей выборки для запуска алгоритма ML</div>
-                        </div>
-                        <div class="steps_item">
-                            <div class="steps_item-number">4</div>
-                            <div class="steps_item-title">Обучаем на исторических данных</div>
-                            <div class="steps_item-text">Можем предсказывать, будет ли у пользователя следующий сеанс
-                                или вернется ли он в течение 7 дней.</div>
-                        </div>
-                        <div class="steps_item">
-                            <div class="steps_item-number">5</div>
-                            <div class="steps_item-title">Валидируем модели на исторических данных</div>
-                            <div class="steps_item-text">Проверяем качество модели на отложенной выборке: точность
-                                прогноза, бизнес-метрики.</div>
-                        </div>
-                        <div class="steps_item">
-                            <div class="steps_item-number">6</div>
-                            <div class="steps_item-title">Выводим прогнозирование</div>
-                            <div class="steps_item-text">Результаты прогноза используются маркетологами или
-                                продакт-менеджерами для внедрения в свои продукты</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="form-block">
-                <div class="container">
-                    <div class="form-block_image">
-                        <img src="image/form_img.svg" alt="">
-                    </div>
-                    <div class="form-block_wrap">
-                        <div class="form-block_title title">Попробуйте бесплатно!</div>
-                        <form>
-                            <div class="line">
-                                <div class="field">
-                                    <input type="text" placeholder="Ваше имя">
+                        <div class="count_romi_block">
+                            <div class="count_romi_p_wrapper">
+                                <p class="bold_title_romi">Посчитаем ROMI</p>
+                                <p class="semi_title_romi">от использования Segmel в вашем маркетинге</p>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_name_block same_class">
+                                    <input type="text" name="Имя" class="input_pattern" required>
+                                    <span>Имя</span>
                                 </div>
-                                <div class="field">
-                                    <input type="email" placeholder="Ваш е-mail">
-                                </div>
-                                <div class="field">
-                                    <button type="submit">
-                                        <span>Отправить</span>
-                                    </button>
+                                <div class="input_block_telephone same_class">
+                                    <input class="tel input_pattern" type="tel" required name="Телефон">
+                                    <span>Мобильный телефон</span>
                                 </div>
                             </div>
-                        </form>
+                            <div class="send_tel_name_block">
+                                <p>Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+                                <button class="gradient_btn">Хочу расчёт</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
-
+            <section class="cases">
+                <div class="container">
+                    <div class="cases_wrapper">
+                        <div class="example_block">
+                            <div class="background_block">
+                                <div class="title_example_block">
+                                    <div class="type_client">
+                                        <p class="title_example">Тип клиента</p>
+                                        <p class="description_example">Интернет-магазин</p>
+                                    </div>
+                                    <div class="channel">
+                                        <p class="title_example">Канал</p>
+                                        <p class="description_example">Яндекс.Директ.</p>
+                                    </div>
+                                </div>
+                                <div class="underline_example_block"></div>
+                                <div class="problem_example_block">
+                                    <p class="title_example">Проблема</p>
+                                    <p class="description_example">Большие затраты и не высокая конверсия в оплаченный
+                                        заказ
+                                        на этапе ремаркетинга</p>
+                                </div>
+                                <div class="solving_example_block">
+                                    <p class="title_example">Решение</p>
+                                    <p class="description_example">Предиктивный таргетинг и оптимизация от Segmel для
+                                        оптимизации кампаний
+                                        по прогнозируемому ROAS, а не по сырым ссылкам</p>
+                                </div>
+                            </div>
+                            <div class="footer_example_block">
+                                <p class="title_example">Результаты тестирования кампании с корректировками</p>
+                                <div class="footer_info_block">
+                                    <div class="example_info_block">
+                                        <p class="percent_example_info_block">+18,3%</p>
+                                        <p class="description_example">Конверсия в заказ ремаркетинговых кампаний</p>
+                                    </div>
+                                    <div class="example_info_block">
+                                        <p class="percent_example_info_block">>970%</p>
+                                        <p class="description_example">ROI по выкупленным заказам</p>
+                                    </div>
+                                    <div class="example_info_block">
+                                        <p class="percent_example_info_block">-26,7%</p>
+                                        <p class="description_example">Выкупленных транзакций</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case_logo_block">
+                            <img src="../image/case_img.svg" alt="">
+                            <p class="bold_title_romi">Кейсы</p>
+                            <p class="semi_title_romi">с оптимизацией рекламных кампаний</p>
+                            <div class="arrow_btns_block">
+                                <div class="left_arr"><img src="image/arrow-left-cases.svg" alt=""></div>
+                                <div class="right_arr"><img src="image/arrow-right-cases.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="count_cases">
+                        <div class="circle_review_active"></div>
+                        <div class="circle_review"></div>
+                        <div class="circle_review"></div>
+                        <div class="circle_review"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="review">
+                <div class="container">
+                    <div class="title_review_block">
+                        <p>Отзывы от клиентов</p>
+                    </div>
+                    <div class="reviews_holder">
+                        <div class="review_block">
+                            <div class="review_photo_block">
+                                <img src="../image/first_review.svg" alt="">
+                            </div>
+                            <div class="review_text_block">
+                                <p class="full_name">Иванов Иван Иванович</p>
+                                <p class="post">Директор по маркетингу Mario Berlucci</p>
+                                <p class="review_text">Предиктивный таргетинг и оптимизация от Segmel для оптимизации
+                                    кампаний
+                                    по прогнозируемому ROAS, а не по сырым ссылкам</p>
+                                <a href="https://www.google.ru/" class="link">google.com</a>
+                            </div>
+                        </div>
+                        <div class="review_block" id="other_media">
+                            <div class="review_photo_block">
+                                <img src="../image/second_review.svg.svg" alt="">
+                            </div>
+                            <div class="review_text_block">
+                                <p class="full_name">Александр Ромащенко</p>
+                                <p class="post">Директор по маркетингу Mario Berlucci</p>
+                                <p class="review_text">Предиктивный таргетинг и оптимизация от Segmel для оптимизации
+                                    кампаний
+                                    по прогнозируемому ROAS, а не по сырым ссылкам</p>
+                                <a href="https://www.google.ru/" class="link">google.com</a>
+                            </div>
+                        </div>
+                        <div class="next_review"><img src="image/arrow-right-cases.svg" alt=""></div>
+                    </div>
+                    <div class="count_review">
+                        <div class="circle_review_active"></div>
+                        <div class="circle_review"></div>
+                        <div class="circle_review"></div>
+                        <div class="circle_review"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="introducing_sagmel">
+                <div class="container">
+                    <div class="introducing_sagmel_title">
+                        <p>Внедряем Segmel под ключ.<br>Показываем результат в деньгах.</p>
+                    </div>
+                    <div class="introducing_segmel_blocks">
+                        <div class="introducing_segmel_block">
+                            <div class="circle_count">1</div>
+                            <p class="introducing_segmel_title">Собираем сырые данные</p>
+                            <p class="introducing_segmel_description">Размещаем пиксель SEGMEL на сайте и размечаем
+                                исходные
+                                данные на сайте и собираем данные из CRM
+                            </p>
+                            <div class="time_circle">
+                                <img src="../image/clock.svg" alt="">
+                                <p>2 недели</p>
+                            </div>
+                        </div>
+                        <div class="introducing_segmel_block">
+                            <div class="circle_count">2</div>
+                            <p class="introducing_segmel_title">Собираем признаки из визитов контента и обучаем модели
+                            </p>
+                            <p class="introducing_segmel_description">Количество просмотренных товаров, количество
+                                добавлений в
+                                избранное, количество добавленных за
+                                сессию товаров в корзину </p>
+                            <div class="time_circle">
+                                <img src="../image/clock.svg" alt="">
+                                <p>1 недели</p>
+                            </div>
+                        </div>
+                        <div class="introducing_segmel_block">
+                            <div class="circle_count">3</div>
+                            <p class="introducing_segmel_title">Запускаем кампании</p>
+                            <p class="introducing_segmel_description">Контролируемые эксперименты для измерения
+                                дополнительного
+                                повышения производительности на разных
+                                платформах, каналах и кампаниях.</p>
+                            <div class="time_circle">
+                                <img src="../image/clock.svg" alt="">
+                                <p>2 недели</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="analysis">
+                <div class="container">
+                    <div class="analysis_wrapper">
+                        <div class="analysis_logo">
+                            <img src="../image/analysis_logo.svg" alt="">
+                        </div>
+                        <div class="analysis_text_block">
+                            <p id="analysis_title">Проанализируем ваши кампании</p>
+                            <p id="analysis_description">и предложим инструменты снижения CAC</p>
+                            <div class="input_block input_block_analysis">
+                                <div class="input_name_block same_class">
+                                    <input type="text" name="Имя" class="input_pattern" required>
+                                    <span>Имя</span>
+                                </div>
+                                <div class="input_name_block same_class">
+                                    <input class="tel input_pattern" type="tel" required name="Телефон">
+                                    <span>Мобильный телефон</span>
+                                </div>
+                                <div class="input_name_block same_class">
+                                    <input type="text" name="Сайт компании" class="input_pattern" required>
+                                    <span>Сайт компании</span>
+                                </div>
+                                <div class="send_tel_name_block">
+                                    <p>Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+                                    <button class="gradient_btn">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <footer>
                 <div class="container">
-                    <div class="footer_logo">
-                        <a href="/"><img src="image/logo2.svg" alt="logo"></a>
+                    <div class="circle_btn">
+                        <img src="../image/circle_btn.svg" alt="">
                     </div>
-                    <div class="footer_text">Сервис, который с помощью скоринга пользователей на сайте помогает
-                        продакт-менеджеру и маркетологу персонально коммуницировать с каждым клиентом и увеличивать
-                        ключевые показатели бизнеса.</div>
-                    <div class="footer_links">
-                        <div class="footer_links-title">Связаться с нами</div>
-                        <a href="mailto:team@ecommhub.com" class="footer_links-mail">team@ecommhub.com</a>
-                        <a href="tel:+74959070707">+7 (495) 907-07-07</a>
+                    <div class="footer_wrapper">
+                        <div class="right_logo_block">
+                            <p id="footer_logo">SEGMEL</p>
+                            <p>Cервис глубокой сегментации пользователей<br>для роста маркетинга и продаж.</p>
+                        </div>
+                        <div class="footer_a_menu">
+                            <a href="">Продукты</a>
+                            <a href="">Как это работает</a>
+                            <a href="">Блог</a>
+                            <a href="">Кейсы</a>
+                            <a href="">Тарифы</a>
+                        </div>
                     </div>
+                    <div class="copyright_underline"></div>
+                    <p id="copyright">© 2023 SEGMEL</p>
                 </div>
             </footer>
         </div>
     </div>
-
-    <!-- Подключение javascript файлов -->
-    <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/scripts.js"></script>
-
 </body>
+<script src="/js/jquery-3.5.0.min.js"></script>
+<script src="/js/new.js"></script>
 
 </html>
