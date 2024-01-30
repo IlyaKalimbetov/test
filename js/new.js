@@ -16,6 +16,52 @@ $(() => {
 
 })
 
+// function smoothScroll() {
+//     document.querySelector('.cases').scrollIntoView({
+//         behavior: 'smooth'
+//     });
+// }
+
+$(".scroll").on("click", function (e) {
+    e.preventDefault();
+    document.querySelector(`${$(this).attr("href")}`).scrollIntoView({
+        behavior: 'smooth'
+    });
+
+    if (window.innerWidth <= 1160) {
+        document.querySelector(".btn_click").click()
+    }
+})
+
+
+
+// $(() => {
+
+//     // Скрол к пунктам меню
+//     $(".scroll").on("click", function (e) {
+//         e.preventDefault();
+//         let id = $(this).attr("href");
+//         console.log(id)
+//         offset = 0;
+//         if ($(window).width() < 1024) {
+//             offset = -50;
+//         }
+
+//         $("html, body").animate({
+//             scrollTop: $(id).offset().top + offset + "px"
+//         }, {
+//             duration: 1500,
+//             easing: "swing"
+//         });
+
+//         $('header .menu_btn').removeClass('active')
+//         $('header .menu').removeClass('show')
+//         $('.overlay').fadeOut(300)
+//     });
+// })
+
+
+
 const is_touch_device = () => !!('ontouchstart' in window)
 
 document.addEventListener('scroll', () => {
